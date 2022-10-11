@@ -1,0 +1,33 @@
+/* 
+ORDEN PARA PONER LAS REGLAS DE CSS:
+  1. POSICIONAMIENTO --> static, absolute, relative, fixed
+  2. MODELO DE CAJA (BOX MODEL) --> margin, border, padding, content  
+  3. TIPOGRAFIA --> tipos, tamaños de fuente, etc
+  4. VISUALES --> box-shadow, border-radius, gradient, etc
+  5. OTROS --> reglas CSS y más
+*/
+
+/* RESETEAR CSS Y VALORES PREDETRMINADOS */
+:root {
+  /* COLORES */
+  --primary-color: #333;
+  --secundary-color: #ccc;
+  /* FUENTES */
+  --principal-font: sans-serif;
+  --secundary-font: sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%; /* PARA USAR MAS FACIL REM -> 1rem = 10px */
+  font-family: var(--principal-font);
+}
+ul,
+ol {
+  list-style: none;
+}
+/*/////////////////////////*/
