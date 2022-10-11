@@ -77,3 +77,16 @@ button {
 button:hover {
   background-color: rgb(91, 87, 191);
 }
+.contenedor-ayuda {
+  text-align: center;
+}
+.contenedor-ayuda .ayuda {
+  color: white;
+}
+.contenedor-ayuda .ayuda a {
+  color: rgb(199, 187, 249);
+  text-decoration: none;
+}
+.contenedor-ayuda .ayuda a:hover {
+  color: rgb(110, 114, 230);
+}

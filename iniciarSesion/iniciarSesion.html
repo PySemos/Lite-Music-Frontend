@@ -8,16 +8,32 @@
     <!-- css -->
     <link rel="stylesheet" href="iniciarSesion.css" />
   </head>
+  <!-- Aqui iria el contenido de la pagina -->
   <body>
-    <!-- Aqui iria el contenido de la pagina -->
     <header></header>
     <main>
       <section class="caja">
         <h2 class="titulo">Iniciar Sesion</h2>
         <form action="" method="post">
-          <input type="text" placeholder="Username" name="username" />
-          <input type="password" placeholder="contraseña" name="password" />
+          <input
+            type="text"
+            placeholder="Usuario"
+            name="username"
+            autocomplete="username"
+            required />
+          <input
+            type="password"
+            placeholder="contraseña"
+            name="password"
+            autocomplete="current-password"
+            required />
           <button type="submit">Enviar</button>
+          <div class="contenedor-ayuda">
+            <p class="ayuda">
+              ¿Aun no tienes una cuenta?
+              <a href="../registrate/registrate.html">Registrate</a>
+            </p>
+          </div>
         </form>
       </section>
     </main>

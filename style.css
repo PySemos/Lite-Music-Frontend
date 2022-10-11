@@ -95,9 +95,10 @@ header {
 .links a {
   color: white;
   text-decoration: none;
+  color: rgb(199, 187, 249);
 }
 .links a:hover {
-  color: rgb(185, 185, 185);
+  color: rgb(110, 114, 230);
 }
 /* ///////////////////////// */
 @media (min-width: 350px) {
