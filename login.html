@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/login.css">
     <title>Log In</title>
 </head>
 <body>
     <!-- Aqui iria el contenido de la pagina -->
-    <h1>login</h1>
-    <form action="" method="post">
-        <input type="text" placeholder="Username" name = "username">
-        <input type="password" name="password" name = "password">
-        <input type="submit" value="Submit">
-    </form>
-    <a href="./main.html""> pagina principal </a>
+    <div class="container__form" >
+        <form class="form__container--inputs" action="" method="post">
+            <p> login </p>
+            <div>
+                <label for="username">username</label>
+                <input type="text" id="username" placeholder="Username" name = "username">
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="**********"  name = "password">
+            </div>
+            <button type="submit" > login </button>
+            <p class="p__link--Signup"> You do not have an account? <a href="./signup.html">Sign up</a> </p>
+        </form>
+    </div>
+    <a href="./main.html"> pagina principal </a>
 </body>
 </html>

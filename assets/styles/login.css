@@ -1,0 +1,45 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.form__container--inputs{
+  width: 275px;
+  height: 315px;
+  border: 1px solid black;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 15px;
+  position: relative;
+}
+.form__container--inputs input{
+  height: 25px;
+  width: 95%;
+  padding: .2rem;
+}
+.form__container--inputs button{
+  width: 90px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow:  3px 2px 5px 1px grey;
+}
+.form__container--inputs > p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.form__container--inputs > .p__link--Signup{
+  font-size: 1rem;
+  position: absolute;
+  bottom: 3px;
+}
