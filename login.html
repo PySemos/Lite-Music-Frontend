@@ -5,16 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aplicacion de música" />
-    <meta name="robots" content="index, follow" />
-    <title>Lite-Music</title>
+    <title>Iniciar Sesion</title>
     <!-- css -->
+    <link rel="stylesheet" href="iniciarSesion.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login-style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- ESTA ES LA PAGINA PRINCIPAL-->
+<!-- Aqui iria el contenido de la pagina -->
 
 <body>
     <header>
@@ -35,8 +36,26 @@
             </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="caja">
+            <h2 class="titulo">Iniciar Sesion</h2>
+            <form action="" method="post">
+                <input id="user" type="text" placeholder="Usuario" name="username" autocomplete="username" required />
+                <input id="password" type="password" placeholder="Contraseña" name="password" autocomplete="current-password" required />
+                <button type="submit">Enviar</button>
+                <div class="contenedor-ayuda">
+                    <p class="ayuda">
+                        ¿Aun no tienes una cuenta?
+                        <a href="../registrate/registrate.html">Registrate</a>
+                    </p>
+                </div>
+                <footer>
+                    <a href="../index.html">Pagina Principal</a>
+                </footer>
+            </form>
+        </section>
+    </main>
+
 </body>
 
 </html>

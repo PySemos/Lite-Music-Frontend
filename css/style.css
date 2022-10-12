@@ -1,0 +1,159 @@
+/* 
+ORDEN PARA PONER LAS REGLAS DE CSS:
+  1. POSICIONAMIENTO --> static, absolute, relative, fixed
+  2. MODELO DE CAJA (BOX MODEL) --> margin, border, padding, content  
+  3. TIPOGRAFIA --> tipos, tamaños de fuente, etc
+  4. VISUALES --> box-shadow, border-radius, gradient, etc
+  5. OTROS --> reglas CSS y más
+*/
+
+
+/* RESETEAR CSS Y VALORES PREDETRMINADOS */
+
+:root {
+    /* COLORES */
+    --primary-color: #333;
+    --secundary-color: #ccc;
+    --white: #fff;
+    /* FUENTES */
+    --principal-font: sans-serif;
+    --secundary-font: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* PARA USAR MAS FACIL REM -> 1rem = 10px */
+    font-family: var(--principal-font);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body{
+    background-color: #fff52d;
+}
+
+/*/////////////////////////*/
+
+header {
+    background-color: darkorchid;
+    position: relative;
+}
+
+.header-main {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.logo {
+    color: var(--white);
+    transition: all 300ms;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+    letter-spacing: 6px;
+}
+
+
+/* ///////////////////////// */
+
+.contenedor-links {
+    display: flex;
+    /* background-color: crimson; */
+}
+
+.contenedor-links:hover .links {
+    display: flex;
+}
+
+
+/* ///////////////////////// */
+
+.icono {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+}
+
+.icono div {
+    background-color: rgb(255, 255, 255);
+    height: 0.3rem;
+    width: 100%;
+}
+
+
+/* ///////////////////////// */
+
+.links {
+    background-color: #444;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* ALAN77777777 EDITS */
+
+.links a {
+    color: lightcyan;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: lightblue;
+}
+
+
+/* ///////////////////////// */
+
+@media (min-width: 350px) {
+    .icono {
+        display: none;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        height: max-content;
+        width: auto;
+        padding: 0;
+        background-color: rgba(127, 255, 212, 0);
+    }
+}
+
+a {
+    color: lightcyan;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 150ms;
+}
+
+a:hover {
+    color: lightblue;
+    cursor: pointer;
+}
