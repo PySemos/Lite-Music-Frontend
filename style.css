@@ -7,113 +7,150 @@ ORDEN PARA PONER LAS REGLAS DE CSS:
   5. OTROS --> reglas CSS y más
 */
 
+
 /* RESETEAR CSS Y VALORES PREDETRMINADOS */
+
 :root {
-  /* COLORES */
-  --primary-color: #333;
-  --secundary-color: #ccc;
-  --white: #fff;
-  /* FUENTES */
-  --principal-font: sans-serif;
-  --secundary-font: sans-serif;
+    /* COLORES */
+    --primary-color: #333;
+    --secundary-color: #ccc;
+    --white: #fff;
+    /* FUENTES */
+    --principal-font: sans-serif;
+    --secundary-font: sans-serif;
 }
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
 }
+
 html {
-  font-size: 62.5%; /* PARA USAR MAS FACIL REM -> 1rem = 10px */
-  font-family: var(--principal-font);
+    font-size: 62.5%;
+    /* PARA USAR MAS FACIL REM -> 1rem = 10px */
+    font-family: var(--principal-font);
 }
+
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
+
 
 /*/////////////////////////*/
+
 header {
-  background-color: darkorchid;
-  position: relative;
+    background-color: darkorchid;
+    position: relative;
 }
+
 .header-main {
-  width: 100%;
-  height: 50px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem;
-
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-.logo {
-  color: var(--white);
-}
-/* ///////////////////////// */
-.contenedor-links {
-  display: flex;
-  /* background-color: crimson; */
-}
-.contenedor-links:hover .links {
-  display: flex;
-}
-/* ///////////////////////// */
-.icono {
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 3rem;
-  height: 3rem;
-
-  display: flex;
-}
-.icono div {
-  background-color: rgb(255, 255, 255);
-  height: 0.3rem;
-  width: 100%;
-}
-/* ///////////////////////// */
-.links {
-  background-color: #444;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  height: 100vh;
-  width: 180px;
-
-  display: none;
-  flex-direction: column;
-
-  gap: 20px;
-  padding: 20px;
-}
-.links a {
-  color: white;
-  text-decoration: none;
-  color: rgb(199, 187, 249);
-}
-.links a:hover {
-  color: rgb(110, 114, 230);
-}
-/* ///////////////////////// */
-@media (min-width: 350px) {
-  .icono {
-    display: none;
-  }
-  .links {
+    width: 100%;
+    height: 50px;
     display: flex;
-    flex-direction: row;
-    position: initial;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 
-    height: max-content;
-    width: auto;
-    padding: 0;
+.logo {
+    color: var(--white);
+    transition: all 300ms;
+    letter-spacing: 1px;
+}
 
-    background-color: rgba(127, 255, 212, 0);
-  }
+.logo:hover {
+    letter-spacing: 6px;
+}
+
+
+/* ///////////////////////// */
+
+.contenedor-links {
+    display: flex;
+    /* background-color: crimson; */
+}
+
+.contenedor-links:hover .links {
+    display: flex;
+}
+
+
+/* ///////////////////////// */
+
+.icono {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+}
+
+.icono div {
+    background-color: rgb(255, 255, 255);
+    height: 0.3rem;
+    width: 100%;
+}
+
+
+/* ///////////////////////// */
+
+.links {
+    background-color: #444;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* ALAN77777777 EDITS */
+
+.links a {
+    color: lightcyan;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: lightblue;
+}
+
+
+/* ///////////////////////// */
+
+@media (min-width: 350px) {
+    .icono {
+        display: none;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        height: max-content;
+        width: auto;
+        padding: 0;
+        background-color: rgba(127, 255, 212, 0);
+    }
+}
+
+a {
+    color: lightcyan;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 150ms;
+}
+
+a:hover {
+    color: lightblue;
+    cursor: pointer;
 }
