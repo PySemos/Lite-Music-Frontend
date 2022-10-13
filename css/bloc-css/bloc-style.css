@@ -124,7 +124,11 @@ body{
   width: 0;
   border: 1px solid red;
 }
-
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 1.1rem;
+}
 
 
 
