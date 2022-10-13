@@ -1,4 +1,4 @@
-@import url("/css/bloc-css/header-block.css");
+@import url("./header-block.css");
 /* 
 ORDEN PARA PONER LAS REGLAS DE CSS:
   1. POSICIONAMIENTO --> static, absolute, relative, fixed
