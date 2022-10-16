@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="notas" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas</title>
+    <!-- mobile css -->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <!-- tablet css -->
+    <link
+      rel="stylesheet"
+      href="css/tablet.css"
+      media="screen and (min-width: 566px)" />
+    <!-- desktop css -->
+    <!-- <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      media="screen and (min-width: 1000px)" /> -->
+    <!-- js -->
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <header><h1>TAREAS</h1></header>
+
+    <main>
+      <div class="contenedor">
+        <!--  -->
+        <section class="seccion-escribir" id="seccion-escribir">
+          <textarea type="text" class="texto" id="texto"></textarea>
+          <div class="contenedor-contador">
+            <p>Caracteres restantes: <span id="contador">60</span></p>
+          </div>
+          <div class="contenedor-botones">
+            <button id="boton-salir">Salir</button>
+            <button id="boton-guardar">Guardar</button>
+          </div>
+        </section>
+        <!--  -->
+        <section class="seccion-tareas" id="seccion-tareas">
+          <button class="boton-nueva-tarea" id="boton-nueva-tarea">
+            Nueva Tarea
+          </button>
+          <div class="contenedor-tareas" id="contenedor-tareas"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a id="atras" href="../index.html">Atras</a>
+    </footer>
+  </body>
+</html>
