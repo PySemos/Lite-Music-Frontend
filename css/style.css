@@ -239,6 +239,10 @@ a:hover {
   font-weight: 600;
   font-size: 20px;
 }
+.contenedor-archivos > div:hover {
+  background-color: rgb(217, 255, 212);
+  color: white;
+}
 
 .rainbow-button {
   margin: 20px 10px;
