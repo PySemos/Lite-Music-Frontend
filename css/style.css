@@ -33,6 +33,11 @@ html {
   font-family: var(--principal-font);
 }
 
+.button{
+  border: none;
+  background-color: rgba(0, 0, 0, 0.0);
+  cursor:pointer;
+}
 ul,
 ol {
   list-style: none;

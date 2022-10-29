@@ -7,148 +7,150 @@
 */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
 }
 
 html {
-  font-size: 62.5%;
-  /* PARA USAR -> 1rem = 10px */
-  font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    /* PARA USAR -> 1rem = 10px */
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
+
 
 /*/////////////////////////*/
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 main .caja {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 90%;
-  max-width: 400px;
-  height: max-content;
-  padding: 20px;
-  background-color: #333;
-  border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    max-width: 400px;
+    height: max-content;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 1rem;
 }
 
 main .titulo {
-  font-size: 3rem;
-  text-align: center;
-  color: lightcyan;
+    font-size: 3rem;
+    text-align: center;
+    color: lightcyan;
 }
 
 main form {
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 main form input,
 button {
-  background-color: #ddd;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
-  color: lightslategray;
-  font-size: 2rem;
+    background-color: #ddd;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: lightslategray;
+    font-size: 2rem;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
 }
 
 footer a {
-  color: lightskyblue;
-  text-decoration: none;
-  font-weight: 700;
+    color: lightskyblue;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 footer a:hover {
-  color: lightblue;
+    color: lightblue;
 }
 
 button {
-  background-color: lightskyblue;
-  color: lightcyan;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 150ms;
-  border: 1px solid transparent;
+    background-color: lightskyblue;
+    color: lightcyan;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 150ms;
+    border: 1px solid transparent;
 }
 
 button:hover {
-  box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.5) inset;
-  cursor: pointer;
+    box-shadow: 0px 0px 16px -3px rgba(0, 0, 0, 0.5) inset;
+    cursor: pointer;
 }
 
 .contenedor-ayuda {
-  text-align: center;
+    text-align: center;
 }
 
 .contenedor-ayuda .ayuda {
-  color: lightcyan;
+    color: lightcyan;
 }
 
 .contenedor-ayuda .ayuda a {
-  color: lightskyblue;
-  text-decoration: none;
+    color: lightskyblue;
+    text-decoration: none;
 }
 
 .contenedor-ayuda .ayuda a:hover {
-  color: lightblue;
+    color: lightblue;
 }
 
 #user {
-  background-color: lightcyan;
-  letter-spacing: 1px;
-  border: 1px solid transparent;
+    background-color: lightcyan;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
 }
 
 #user:focus {
-  border: 1px solid transparent;
-  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.3) inset;
-  color: #333;
-  outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.3) inset;
+    color: #333;
+    outline: none;
 }
 
 #password {
-  background-color: lightcyan;
-  border: 1px solid transparent;
+    background-color: lightcyan;
+    border: 1px solid transparent;
 }
 
 #password:focus {
-  color: #333;
-  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.3) inset;
-  outline: none;
-  /* ELIMINA EL FONDO AMARILLO MOLESTO */
-  -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
+    color: #333;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.3) inset;
+    outline: none;
+    /* ELIMINA EL FONDO AMARILLO MOLESTO */
+    -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
 }
+
 
 /* ELIMINA EL FONDO AMARILLO MOLESTO */
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
+    -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
 }
 
 input:active:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
+    -webkit-box-shadow: 0 0 0px 1000px lightcyan inset;
 }
